@@ -1,0 +1,31 @@
+# Binaries and build artifacts
+bin/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# V compiler cache
+.vmodules/
+.v_cache/
+
+# Test and benchmark temp files
+tmp/
+*.tmp
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
