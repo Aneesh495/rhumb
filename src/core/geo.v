@@ -54,13 +54,13 @@ pub fn (c Coord3D) to_coord2d() Coord {
 }
 
 // deg_to_rad converts degrees to radians.
-[inline]
+@[inline]
 pub fn deg_to_rad(deg f64) f64 {
 	return deg * math.pi / 180.0
 }
 
 // rad_to_deg converts radians to degrees.
-[inline]
+@[inline]
 pub fn rad_to_deg(rad f64) f64 {
 	return rad * 180.0 / math.pi
 }
