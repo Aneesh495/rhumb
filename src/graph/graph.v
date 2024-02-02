@@ -4,6 +4,7 @@ import core
 import math
 
 // Graph models road network topology using Compressed Sparse Row (CSR) forward and backward star arrays.
+@[heap]
 pub struct Graph {
 pub mut:
 	nodes         []NodeAttribute
