@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rhumb - Geospatial Routing and Map Matching</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<style>
+		body, html { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0d1117; color: #c9d1d9; }
+		#map { height: 100%; width: 100%; }
+		.panel { position: absolute; top: 16px; left: 16px; z-index: 1000; background: rgba(22, 27, 34, 0.95); backdrop-filter: blur(8px); border: 1px solid #30363d; border-radius: 8px; padding: 16px; width: 320px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+		h1 { margin: 0 0 12px 0; font-size: 18px; color: #58a6ff; display: flex; align-items: center; gap: 8px; }
+		.badge { background: #238636; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 12px; font-weight: normal; }
+		.control-group { margin-bottom: 12px; }
+		label { display: block; font-size: 12px; color: #8b949e; margin-bottom: 4px; }
+		input, select, button { width: 100%; box-sizing: border-box; background: #0d1117; border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; padding: 8px; font-size: 13px; }
+		button { background: #1f6feb; border: none; color: #fff; font-weight: 600; cursor: pointer; margin-top: 6px; transition: background 0.2s; }
+		button:hover { background: #388bfd; }
+		.metrics { margin-top: 12px; font-size: 12px; border-top: 1px solid #30363d; padding-top: 8px; line-height: 1.6; }
+	</style>
+</head>
+<body>
+	<div class="panel">
+		<h1>Rhumb Engine <span class="badge">v0.1.0</span></h1>
+		<div class="control-group">
+			<label>Origin (lat,lon)</label>
+			<input type="text" id="origin" value="37.7749,-122.4194" />
+		</div>
+		<div class="control-group">
+			<label>Destination (lat,lon)</label>
+			<input type="text" id="dest" value="37.7833,-122.4167" />
+		</div>
+		<div class="control-group">
+			<label>Routing Algorithm</label>
+			<select id="algo">
+				<option value="dijkstra">Dijkstra (Exact)</option>
+				<option value="astar">A* (Goal-Directed)</option>
+				<option value="bi_dijkstra">Bidirectional Dijkstra</option>
+				<option value="bi_astar">Bidirectional A*</option>
+			</select>
+		</div>
+		<button id="route-btn">Compute Shortest Route</button>
+		<div class="metrics" id="metrics-panel">
+			Graph loaded: Ready for navigation and map matching.
+		</div>
+	</div>
+	<div id="map"></div>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+		const map = L.map('map').setView([37.7749, -122.4194], 14);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+			attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+			maxZoom: 19
+		}).addTo(map);
+		let currentRouteLayer = null;
+		document.getElementById('route-btn').addEventListener('click', async () => {
+			const from = document.getElementById('origin').value;
+			const to = document.getElementById('dest').value;
+			const algo = document.getElementById('algo').value;
+			try {
+				const res = await fetch('/api/v1/route?from=' + from + '&to=' + to + '&algo=' + algo);
+				if (!res.ok) throw new Error('Route calculation failed');
+				const data = await res.json();
+				if (currentRouteLayer) map.removeLayer(currentRouteLayer);
+				currentRouteLayer = L.geoJSON(data, {
+					style: { color: '#58a6ff', weight: 5, opacity: 0.9 }
+				}).addTo(map);
+				map.fitBounds(currentRouteLayer.getBounds(), { padding: [50, 50] });
+				const props = data.features[0].properties;
+				document.getElementById('metrics-panel').innerHTML =
+					'<strong>Distance:</strong> ' + (props.distance_m / 1000).toFixed(2) + ' km<br/>' +
+					'<strong>Estimated Time:</strong> ' + props.duration_s + ' seconds<br/>' +
+					'<strong>Status:</strong> Optimal Shortest Path Found';
+			} catch (err) {
+				document.getElementById('metrics-panel').innerHTML = '<span style="color:#f85149;">' + err.message + '</span>';
+			}
+		});
+	</script>
+</body>
+</html>
