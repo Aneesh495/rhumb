@@ -141,24 +141,52 @@ pub fn (m &MapMatcher) match_trajectory(g &graph.Graph, trajectory []GPSPoint, p
 	}
 
 	// Step 3: Backtrack Optimal State Sequence
-	mut best_final_idx := 0
+	mut best_final_idx := -1
 	mut max_final_prob := -math.max_f64
-	last_step := num_steps - 1
+	mut best_final_step := -1
 
-	for j in 0 .. candidates_by_step[last_step].len {
-		if trellis[last_step][j] > max_final_prob {
-			max_final_prob = trellis[last_step][j]
-			best_final_idx = j
+	// Search backwards for the latest step with valid trellis candidates
+	for t := num_steps - 1; t >= 0; t-- {
+		for j in 0 .. candidates_by_step[t].len {
+			if trellis[t][j] > max_final_prob {
+				max_final_prob = trellis[t][j]
+				best_final_idx = j
+				best_final_step = t
+			}
+		}
+		if best_final_idx >= 0 {
+			break
 		}
 	}
 
 	mut matched_candidates := []MatchCandidate{len: num_steps}
 	mut curr_idx := best_final_idx
 
-	for t := last_step; t >= 0; t-- {
-		if candidates_by_step[t].len > 0 && curr_idx >= 0 && curr_idx < candidates_by_step[t].len {
+	if best_final_step >= 0 {
+		for t := best_final_step; t >= 0; t-- {
+			if candidates_by_step[t].len == 0 {
+				curr_idx = -1
+				continue
+			}
+			if curr_idx < 0 || curr_idx >= candidates_by_step[t].len {
+				mut best_j := 0
+				mut best_p := -math.max_f64
+				for j in 0 .. candidates_by_step[t].len {
+					if trellis[t][j] > best_p {
+						best_p = trellis[t][j]
+						best_j = j
+					}
+				}
+				curr_idx = best_j
+			}
 			matched_candidates[t] = candidates_by_step[t][curr_idx]
 			curr_idx = backtrack[t][curr_idx]
+		}
+
+		for t in (best_final_step + 1) .. num_steps {
+			if candidates_by_step[t].len > 0 {
+				matched_candidates[t] = candidates_by_step[t][0]
+			}
 		}
 	}
 
@@ -173,19 +201,30 @@ pub fn (m &MapMatcher) match_trajectory(g &graph.Graph, trajectory []GPSPoint, p
 		pt := trajectory[t]
 		cand := matched_candidates[t]
 
-		// Calculate confidence based on error distance
-		conf := math.clamp(1.0 - cand.distance_m / m.search_radius, 0.0, 1.0)
+		// Fallback to original GPS fix if candidate is empty or invalid
+		is_valid_cand := cand.projected_coord.is_valid() && (cand.projected_coord.lat != 0.0 || cand.projected_coord.lon != 0.0)
+		matched_coord := if is_valid_cand {
+			cand.projected_coord
+		} else {
+			pt.coord
+		}
+
+		conf := if is_valid_cand {
+			math.clamp(1.0 - cand.distance_m / m.search_radius, 0.0, 1.0)
+		} else {
+			0.1
+		}
 		total_conf += conf
 
 		matched_points << MatchedPoint{
 			original_gps: pt
-			matched_coord: cand.projected_coord
+			matched_coord: matched_coord
 			edge_id: cand.edge_id
-			distance_m: cand.distance_m
+			distance_m: if is_valid_cand { cand.distance_m } else { 0.0 }
 			confidence: conf
 		}
 
-		if matched_edges.len == 0 || matched_edges[matched_edges.len - 1] != cand.edge_id {
+		if is_valid_cand && (matched_edges.len == 0 || matched_edges[matched_edges.len - 1] != cand.edge_id) {
 			matched_edges << cand.edge_id
 		}
 	}

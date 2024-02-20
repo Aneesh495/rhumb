@@ -3,6 +3,7 @@ module formats
 import core
 import graph
 import json
+import os
 
 // GeoJSONFeatureCollection models a GeoJSON document per RFC 7946.
 pub struct GeoJSONFeatureCollection {
@@ -118,4 +119,12 @@ pub fn load_geojson_to_graph(raw_json string, mut builder graph.GraphBuilder) ?i
 	}
 
 	return edges_added
+}
+
+// load_geojson_network reads and parses a GeoJSON file directly into a Graph.
+pub fn load_geojson_network(path string) ?graph.Graph {
+	content := os.read_file(path) or { return none }
+	mut builder := graph.new_graph_builder()
+	load_geojson_to_graph(content, mut builder) or { return none }
+	return builder.build()
 }

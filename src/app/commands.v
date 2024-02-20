@@ -302,6 +302,13 @@ fn parse_coord(str string) ?core.Coord {
 
 fn load_or_create_default_graph(file_path string) graph.Graph {
 	if file_path.len > 0 && os.exists(file_path) {
+		if file_path.ends_with('.geojson') || file_path.ends_with('.json') {
+			loaded := formats.load_geojson_network(file_path) or {
+				print_warn('Failed to parse GeoJSON network from ${file_path}, falling back to built-in network')
+				return create_default_san_francisco_graph()
+			}
+			return loaded
+		}
 		loaded := formats.load_graph_binary(file_path) or {
 			print_warn('Failed to load binary graph from ${file_path}, falling back to built-in network')
 			return create_default_san_francisco_graph()
