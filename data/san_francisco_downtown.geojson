@@ -1,0 +1,926 @@
+{
+  "type": "FeatureCollection",
+  "name": "San Francisco Downtown Network",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "name": "Market St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.785
+          ],
+          [
+            -122.411,
+            37.785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name": "Market St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.785
+          ],
+          [
+            -122.40700000000001,
+            37.785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name": "Market St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.785
+          ],
+          [
+            -122.403,
+            37.785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name": "Market St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.785
+          ],
+          [
+            -122.399,
+            37.785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "name": "Mission St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.782
+          ],
+          [
+            -122.411,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "name": "Mission St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.782
+          ],
+          [
+            -122.40700000000001,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "name": "Mission St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.782
+          ],
+          [
+            -122.403,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "name": "Mission St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.782
+          ],
+          [
+            -122.399,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 21,
+        "name": "Howard St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.778999999999996
+          ],
+          [
+            -122.411,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 22,
+        "name": "Howard St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.778999999999996
+          ],
+          [
+            -122.40700000000001,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 23,
+        "name": "Howard St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.778999999999996
+          ],
+          [
+            -122.403,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 24,
+        "name": "Howard St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.778999999999996
+          ],
+          [
+            -122.399,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 31,
+        "name": "Folsom St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.775999999999996
+          ],
+          [
+            -122.411,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 32,
+        "name": "Folsom St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.775999999999996
+          ],
+          [
+            -122.40700000000001,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 33,
+        "name": "Folsom St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.775999999999996
+          ],
+          [
+            -122.403,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 34,
+        "name": "Folsom St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.775999999999996
+          ],
+          [
+            -122.399,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 41,
+        "name": "Harrison St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.772999999999996
+          ],
+          [
+            -122.411,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 42,
+        "name": "Harrison St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.772999999999996
+          ],
+          [
+            -122.40700000000001,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 43,
+        "name": "Harrison St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.772999999999996
+          ],
+          [
+            -122.403,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 44,
+        "name": "Harrison St",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.772999999999996
+          ],
+          [
+            -122.399,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 101,
+        "name": "1st St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.785
+          ],
+          [
+            -122.415,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 102,
+        "name": "2nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.785
+          ],
+          [
+            -122.411,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 103,
+        "name": "3rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.785
+          ],
+          [
+            -122.40700000000001,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 104,
+        "name": "4th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.785
+          ],
+          [
+            -122.403,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 105,
+        "name": "5th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.399,
+            37.785
+          ],
+          [
+            -122.399,
+            37.782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 111,
+        "name": "1st St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.782
+          ],
+          [
+            -122.415,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 112,
+        "name": "2nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.782
+          ],
+          [
+            -122.411,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 113,
+        "name": "3rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.782
+          ],
+          [
+            -122.40700000000001,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 114,
+        "name": "4th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.782
+          ],
+          [
+            -122.403,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 115,
+        "name": "5th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.399,
+            37.782
+          ],
+          [
+            -122.399,
+            37.778999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 121,
+        "name": "1st St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.778999999999996
+          ],
+          [
+            -122.415,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 122,
+        "name": "2nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.778999999999996
+          ],
+          [
+            -122.411,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 123,
+        "name": "3rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.778999999999996
+          ],
+          [
+            -122.40700000000001,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 124,
+        "name": "4th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.778999999999996
+          ],
+          [
+            -122.403,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 125,
+        "name": "5th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.399,
+            37.778999999999996
+          ],
+          [
+            -122.399,
+            37.775999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 131,
+        "name": "1st St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.415,
+            37.775999999999996
+          ],
+          [
+            -122.415,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 132,
+        "name": "2nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.411,
+            37.775999999999996
+          ],
+          [
+            -122.411,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 133,
+        "name": "3rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40700000000001,
+            37.775999999999996
+          ],
+          [
+            -122.40700000000001,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 134,
+        "name": "4th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.403,
+            37.775999999999996
+          ],
+          [
+            -122.403,
+            37.772999999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 135,
+        "name": "5th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.399,
+            37.775999999999996
+          ],
+          [
+            -122.399,
+            37.772999999999996
+          ]
+        ]
+      }
+    }
+  ]
+}

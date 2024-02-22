@@ -1,0 +1,926 @@
+{
+  "type": "FeatureCollection",
+  "name": "Manhattan Midtown Network",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 200,
+        "name": "W 42nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.755
+          ],
+          [
+            -73.9875,
+            40.755
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 201,
+        "name": "W 42nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.755
+          ],
+          [
+            -73.985,
+            40.755
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 202,
+        "name": "W 42nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.755
+          ],
+          [
+            -73.9825,
+            40.755
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 203,
+        "name": "W 42nd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.755
+          ],
+          [
+            -73.97999999999999,
+            40.755
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 210,
+        "name": "W 43rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.756800000000005
+          ],
+          [
+            -73.9875,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 211,
+        "name": "W 43rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.756800000000005
+          ],
+          [
+            -73.985,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 212,
+        "name": "W 43rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.756800000000005
+          ],
+          [
+            -73.9825,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 213,
+        "name": "W 43rd St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.756800000000005
+          ],
+          [
+            -73.97999999999999,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 220,
+        "name": "W 44th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.7586
+          ],
+          [
+            -73.9875,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 221,
+        "name": "W 44th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.7586
+          ],
+          [
+            -73.985,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 222,
+        "name": "W 44th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.7586
+          ],
+          [
+            -73.9825,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 223,
+        "name": "W 44th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.7586
+          ],
+          [
+            -73.97999999999999,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 230,
+        "name": "W 45th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.760400000000004
+          ],
+          [
+            -73.9875,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 231,
+        "name": "W 45th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.760400000000004
+          ],
+          [
+            -73.985,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 232,
+        "name": "W 45th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.760400000000004
+          ],
+          [
+            -73.9825,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 233,
+        "name": "W 45th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.760400000000004
+          ],
+          [
+            -73.97999999999999,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 240,
+        "name": "W 46th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.7622
+          ],
+          [
+            -73.9875,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 241,
+        "name": "W 46th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.7622
+          ],
+          [
+            -73.985,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 242,
+        "name": "W 46th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.7622
+          ],
+          [
+            -73.9825,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 243,
+        "name": "W 46th St",
+        "highway": "secondary",
+        "maxspeed": "40 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.7622
+          ],
+          [
+            -73.97999999999999,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 300,
+        "name": "8th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.755
+          ],
+          [
+            -73.99,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 301,
+        "name": "7th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.755
+          ],
+          [
+            -73.9875,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 302,
+        "name": "6th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.755
+          ],
+          [
+            -73.985,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 303,
+        "name": "5th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.755
+          ],
+          [
+            -73.9825,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 304,
+        "name": "Madison Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.97999999999999,
+            40.755
+          ],
+          [
+            -73.97999999999999,
+            40.756800000000005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 310,
+        "name": "8th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.756800000000005
+          ],
+          [
+            -73.99,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 311,
+        "name": "7th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.756800000000005
+          ],
+          [
+            -73.9875,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 312,
+        "name": "6th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.756800000000005
+          ],
+          [
+            -73.985,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 313,
+        "name": "5th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.756800000000005
+          ],
+          [
+            -73.9825,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 314,
+        "name": "Madison Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.97999999999999,
+            40.756800000000005
+          ],
+          [
+            -73.97999999999999,
+            40.7586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 320,
+        "name": "8th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.7586
+          ],
+          [
+            -73.99,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 321,
+        "name": "7th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.7586
+          ],
+          [
+            -73.9875,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 322,
+        "name": "6th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.7586
+          ],
+          [
+            -73.985,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 323,
+        "name": "5th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.7586
+          ],
+          [
+            -73.9825,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 324,
+        "name": "Madison Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.97999999999999,
+            40.7586
+          ],
+          [
+            -73.97999999999999,
+            40.760400000000004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 330,
+        "name": "8th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.99,
+            40.760400000000004
+          ],
+          [
+            -73.99,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 331,
+        "name": "7th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9875,
+            40.760400000000004
+          ],
+          [
+            -73.9875,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 332,
+        "name": "6th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985,
+            40.760400000000004
+          ],
+          [
+            -73.985,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 333,
+        "name": "5th Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9825,
+            40.760400000000004
+          ],
+          [
+            -73.9825,
+            40.7622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 334,
+        "name": "Madison Ave",
+        "highway": "primary",
+        "maxspeed": "45 km/h",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.97999999999999,
+            40.760400000000004
+          ],
+          [
+            -73.97999999999999,
+            40.7622
+          ]
+        ]
+      }
+    }
+  ]
+}
